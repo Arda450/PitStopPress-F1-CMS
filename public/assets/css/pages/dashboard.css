@@ -1,0 +1,134 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Container for the whole dashboard */
+.dashboard-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Styling for the main content area */
+.content {
+  margin-left: 200px; /* Same as the width of the sidebar */
+  padding: 20px;
+  width: calc(100% - 200px); /* Adjust width based on sidebar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome1 {
+  display: none;
+}
+
+/* Styling für das h1-Element */
+header h1 {
+  font-size: 1.8rem; /* Größere Schriftgröße */
+  color: black; /* Dunklere Textfarbe */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Schatten für den Text */
+}
+
+/* Schatten für das header-Element */
+header {
+  padding: 15px 20px;
+  border-bottom: 2px solid #6d6d6d;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für das header-Element */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.placeholder-div {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  padding: 25px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-div h2 {
+  margin-bottom: 10px;
+}
+
+.placeholder-div p {
+  margin-bottom: 10px;
+}
+
+.placeholder-div .item-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Rounded corners for the image */
+}
+
+@media (max-width: 80em) {
+  #home {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 70.5em) {
+  .content {
+    margin-left: 150px;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 50em) {
+  .content {
+    margin-left: 110px;
+    /* margin-right: auto; */
+  }
+}
+
+@media (max-width: 40.625em) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    margin-left: 0; /* Remove left margin for mobile view */
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%; /* Adjust width for mobile view */
+  }
+  .welcome {
+    display: none;
+  }
+
+  .welcome1 {
+    display: block;
+  }
+
+  .welcome-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+  }
+}

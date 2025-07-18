@@ -1,0 +1,100 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.footer {
+  padding: 1.4rem;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.footer a::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 0;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.footer a:hover::before {
+  width: 100%;
+}
+
+.sm-icons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.legal-links {
+  display: flex;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 81em) {
+  .footer {
+    font-size: 1.2rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+  }
+
+  .footer a::before {
+    height: 2px;
+  }
+
+  .sm-icons {
+    gap: 2.5rem;
+  }
+
+  .legal-links {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 62em) {
+  .footer {
+    font-size: 1rem;
+  }
+
+  .sm-icons {
+    gap: 1.4rem;
+    font-size: 1.5rem;
+  }
+
+  .legal-links {
+    gap: 1.3rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    gap: 1rem;
+    padding: 1.3rem;
+  }
+}

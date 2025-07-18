@@ -1,0 +1,45 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.impressum {
+  max-width: 1550px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3rem;
+  color: #6d6d6d;
+  margin: 0 2rem 4rem 2rem;
+}
+
+.impressum-paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.responsible-heading {
+  padding-bottom: 0.5rem;
+}
+.contact-heading {
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 34em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}

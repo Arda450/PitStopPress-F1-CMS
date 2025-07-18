@@ -1,0 +1,92 @@
+.race-results {
+  display: flex;
+  flex-direction: column;
+  color: #6d6d6d;
+  padding: 0 2rem 4rem 2rem;
+}
+
+.results-header,
+.results-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.results-header {
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-bottom: 2px solid black;
+}
+
+.result-column {
+  flex: 1;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+@media (max-width: 100em) {
+  .results-header,
+  .results-row {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+}
+
+@media (max-width: 87.3em) {
+  .results-header {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 67.5em) {
+  .results-header,
+  .results-row {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 57em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .time {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .results-header,
+  .results-row {
+    justify-content: space-around;
+    font-size: 0.7rem;
+  }
+
+  .date {
+    display: none;
+  }
+}
+
+@media (max-width: 35em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .winner {
+    display: none;
+  }
+
+  .result-column {
+    padding: 0 0.2rem;
+  }
+}
+
+@media (max-width: 25em) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .results-header,
+  .results-row {
+    font-size: 0.6rem;
+  }
+}

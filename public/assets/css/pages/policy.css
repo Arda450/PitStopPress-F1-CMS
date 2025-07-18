@@ -1,0 +1,42 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.privacy-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2rem;
+  color: #6d6d6d;
+  max-width: 1550px;
+  margin: 0 auto;
+  margin: 0 2rem 4rem 2rem;
+}
+
+.effective-date {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 40.625em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 28em) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .privacy-policy {
+    gap: 1.5rem;
+    margin: 0 1rem 2rem 1rem;
+  }
+}

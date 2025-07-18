@@ -1,0 +1,218 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Small Reset */
+*::before,
+*::after,
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heading-1.contact-h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+label,
+select {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+input,
+textarea {
+  border: 3px solid black;
+  padding: 0.5rem;
+  border-radius: 10px;
+  resize: none;
+}
+
+select {
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.labels {
+  width: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.labels > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.labels > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.form-control {
+  display: -ms-grid;
+  display: grid;
+}
+
+.height-limit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-control.gender {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.form-control.first-name {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.form-control.last-name {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.form-control.address {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2; /* Nimmt beide Spalten in Anspruch */
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.form-control.zip-code {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+.form-control.location {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+.form-control.email {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2; /* Nimmt beide Spalten in Anspruch */
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+.form-control.message-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2; /* Nimmt beide Spalten in Anspruch */
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#message {
+  height: 7rem;
+}
+
+.require-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#submit:hover {
+  color: black;
+  text-decoration: underline;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#submit {
+  width: 100px;
+  height: 35px;
+  padding: 0.3rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--btn-color);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+form span {
+  color: #c31616;
+  width: 100%;
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+@media (max-width: 30em) {
+  .contact-h1 {
+    font-size: 2.5rem;
+  }
+
+  .labels {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}

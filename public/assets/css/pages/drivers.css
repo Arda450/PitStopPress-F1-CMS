@@ -1,0 +1,92 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#f1-drivers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3rem 3rem;
+  padding: 0 0 4rem 0;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.driver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 15px;
+  padding: 0.5rem;
+  background-color: #b3b5b5;
+}
+
+.driver-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.drivers-img {
+  width: 300px;
+  height: auto;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.overlay-wrapper {
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.drivers-number {
+  width: 100px;
+  height: auto;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+@media (max-width: 34em) {
+  .heading-1 {
+    font-size: 2.2rem;
+  }
+
+  .drivers-img {
+    width: 250px;
+    height: auto;
+  }
+}
